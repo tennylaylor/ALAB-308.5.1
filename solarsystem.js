@@ -1,4 +1,4 @@
-const numbers = [47, 25, 53, 88, 62];
+/*const numbers = [47, 25, 53, 88, 62];
 //let sumarray = 0 ;
 function sumArray(arr) {
     let sum = 0;
@@ -88,7 +88,7 @@ const data = [
 ];
 
 // Sort the array by ascending age
-data.sort((a, b) => a.age - b.age);
+data.sort((a, b) => number(a.age) - number(b.age));
 
 console.log(data);
 
@@ -135,5 +135,24 @@ const totalAge = people1.reduce((sum, person) => sum + person.age, 0); //sum of 
 const averageAge = totalAge / people.length; //average age
 
 console.log("Sum of ages:", totalAge);
-console.log("Average age:", averageAge);
+console.log("Average age:", averageAge); 
 
+//////////////=====================part 3 Think Critically==============//////////////
+function incrementAge(obj) {
+    obj.age +=1;
+    }
+const person = {name:"Man", age: 30};
+incrementAge(person);
+console.log(person);
+
+///////////////////=========== bullet 2 ================//////////////////
+
+function incrementAgeCopy (obj) {
+const newObj = {...obj }; //make copy
+newObj.age += 1; //update age
+return newObj; // return copy
+}
+const person2 = {name: "Woman", age: 32};
+const updatePerson2 = incrementAgeCopy(person2);
+console.log(person2);
+console.log(updatePerson2); */
